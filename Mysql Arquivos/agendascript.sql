@@ -52,3 +52,9 @@ ten_codigo int,
 foreign key(usu_codigo) references usuario(usu_codigo),
 foreign key(ten_codigo) references tipoendereco(ten_codigo)
 )engine=innoDB;
+
+insert into perfil (per_descricao) values ('ADM');
+insert into perfil (per_descricao) values ('Gerente');
+
+select * from perfil;
+delete from perfil where
